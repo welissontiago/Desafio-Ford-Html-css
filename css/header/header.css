@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+
+.container-center {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #2c3da0;
+}
+
+.header a:hover {
+  color: #6f7ab8;
+}
