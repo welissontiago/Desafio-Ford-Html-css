@@ -1,0 +1,57 @@
+.section-video {
+  display: grid;
+  grid-template-columns: minmax(100px, 350px) minmax(300px, 1200px) 1fr;
+  grid-template-areas: "background-black-1 video background-black-2";
+}
+
+.ford-video {
+  grid-area: video;
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.ford-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-black-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  grid-area: background-black-1;
+}
+
+.background-black-1 h1 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.background-black-2 {
+  background-color: black;
+  grid-area: background-black-2;
+}
+
+@media (max-width: 800px) {
+  .section-video {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "background-black-1"
+      "video";
+  }
+  .background-black-1 {
+    height: 100px;
+  }
+  .background-black-2 {
+    display: none;
+  }
+}

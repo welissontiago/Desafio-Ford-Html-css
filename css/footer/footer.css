@@ -1,0 +1,40 @@
+.footer-bg {
+  margin-top: 6px;
+  padding: 25px 0px;
+  background-color: blue;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.copy {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+@media (max-width: 586px) {
+  .redes {
+    margin-bottom: 10px;
+  }
+  .copy {
+    margin-top: 10px;
+  }
+  .logo-footer {
+    margin-top: 20px;
+  }
+}

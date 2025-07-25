@@ -1,0 +1,62 @@
+.lancamentos-flex {
+  padding: 50px 0px;
+  justify-content: center;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lancamentos-flex h2,
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.lancamentos-flex h2 {
+  color: #2b1ee2;
+}
+
+.container-flex {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.container-flex input {
+  height: 25px;
+  width: 25px;
+}
+
+.main-lancamentos button {
+  box-sizing: border-box;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-lancamentos button:hover {
+  background-color: #2b1ee2;
+}
+
+.button-flex {
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+}
+
+.lancamentos-flex img {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.lancamentos-flex img:hover {
+  transform: scaleX(-1);
+}

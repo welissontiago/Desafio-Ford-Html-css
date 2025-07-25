@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <title>Ford Enter</title>
+  <title>Document</title>
 </head>
 
 <body>
+
   <header class="header">
     <img src="../img/logo-ford-256.png" alt="logo-ford" />
     <div class="container-center">
@@ -24,12 +25,29 @@
       </nav>
     </div>
   </header>
-  <main class="main-content">
-    <img class="imagem" src="../img/imagem_1.jpg" alt="carro-main" />
-    <p class="texto">
-      Está é a nova Ranger Ford 2022 Verifique a novidade <a href="#">aqui</a>
-    </p>
+
+  <main class="forms">
+    <div class="forms-flex">
+      <div>
+        <img src="../img/XL Cabine.jpg" alt="cabine">
+      </div>
+      <form action="/processar-dados" method="post">
+        <h1>Sobre você</h1>
+        <input type="text" id="nome" name="nome_usuario" placeholder="Nome" required>
+        <input type="email" id="email" name="email_usuario" placeholder="Email" required>
+        <input type="text" id="CPF" name="cpf" placeholder="CPF" required>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+        <input type="tel" id="telefone" name="telefone_usuario" placeholder="(71) 99999-9999">
+        <select name="contato" id="contato" required>
+          <option value="" disabled selected>tipo do contato</option>
+          <option value="elogio">elogio</option>
+          <option value="reclamacao">reclamação</option>
+          <option value="solicitacao">solicitação</option>
+        </select>
+      </form>
+    </div>
   </main>
+
   <footer class="footer-bg">
     <div class="footer-flex">
       <div class="redes">
@@ -46,6 +64,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>
