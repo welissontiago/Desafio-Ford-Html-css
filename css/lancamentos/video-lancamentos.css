@@ -1,6 +1,9 @@
 .section-video {
   display: grid;
-  grid-template-columns: minmax(100px, 350px) minmax(300px, 1200px) 1fr;
+  grid-template-columns: minmax(100px, 350px) minmax(300px, 1200px) minmax(
+      100px,
+      350px
+    );
   grid-template-areas: "background-black-1 video background-black-2";
 }
 
@@ -23,7 +26,6 @@
 
 .background-black-1 {
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: black;
   grid-area: background-black-1;
@@ -34,6 +36,7 @@
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  text-align: center;
 }
 
 .background-black-2 {

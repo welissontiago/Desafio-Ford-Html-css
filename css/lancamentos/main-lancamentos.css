@@ -33,7 +33,7 @@ p {
   margin: 0 auto;
   padding: 15px 40px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   background-color: blue;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -43,6 +43,7 @@ p {
 
 .main-lancamentos button:hover {
   background-color: #2b1ee2;
+  border: 1px solid black;
 }
 
 .button-flex {
