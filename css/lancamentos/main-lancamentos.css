@@ -53,11 +53,18 @@ p {
 }
 
 .lancamentos-flex img {
+  max-width: 60%;
   padding: 15px 20px;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
 }
 
 .lancamentos-flex img:hover {
   transform: scaleX(-1);
+  animation: zoom-in 1s linear forwards;
+}
+
+@keyframes zoom-in {
+  100% {
+    max-width: 100%;
+  }
 }

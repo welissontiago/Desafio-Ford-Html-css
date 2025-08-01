@@ -3,7 +3,6 @@
   justify-content: center;
   padding: 50px 30px;
   gap: 30px;
-  margin-bottom: 60px;
 }
 
 .forms-flex form {
@@ -13,7 +12,8 @@
 }
 
 .forms-flex form input,
-select {
+select,
+textarea {
   box-sizing: border-box;
   padding: 10px 15px;
   font-family: "Roboto", sans-serif;
@@ -23,7 +23,8 @@ select {
 }
 
 .forms-flex form input:hover,
-select:hover {
+select:hover,
+textarea:hover {
   border: 1px solid blue;
 }
 
@@ -47,6 +48,11 @@ select:hover {
 .forms-flex button:hover {
   background-color: #2b1ee2;
   border: 1px solid black;
+}
+
+.texoArea {
+  border-radius: 5px;
+  resize: none;
 }
 
 @media (max-width: 761px) {

@@ -2,7 +2,7 @@
   padding: 20px 30px;
   display: grid;
   grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
-  grid-template-rows: 1fr 150px;
+  grid-template-rows: 1fr 160px;
   grid-template-areas:
     ". img ."
     ". texto .";
@@ -21,4 +21,8 @@
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: bold;
+}
+
+a:hover {
+  color: blue;
 }
